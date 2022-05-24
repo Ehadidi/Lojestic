@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+<!--    <link rel="stylesheet" href="https://mojoaxel.github.io/bootstrap-select-country/dist/css/bootstrap-select-country.min.css" />-->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link href="css/select2.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/flatpickr.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/select.dataTables.min.css">
+    <link rel="stylesheet" href="css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/c3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleEn.css">
+    <style>
+        table.dataTable tbody th, table.dataTable tbody td{
+            padding: 0!important;
+        }
+    </style>
+    <link rel="stylesheet" href="css/styleEn.css">
+    <title>Dashboard</title>
+</head>
+<body>
+<div class="overlay-layer-modal"></div>
+<div class="overlay-layer"></div>
+
+<div class="side-bar">
+    <h6 class="p-3"><b>Dashboard</b></h6>
+    <ul class="list-group p-0">
+        <li>
+            <img class="ml-2 mr-2" src="images/layout.png" alt="icon">
+            <a class="default-link" href="Dashboard.html">Dashboard</a>
+        </li>
+    </ul>
+    <h6 class="p-3"><b>orders</b></h6>
+    <ul class="list-group p-0">
+        <li>
+            <img class="ml-2 mr-2" src="images/lorry%20(1).png" alt="icon">
+            <a class="default-link" href="Orders.html">Orders</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/folder%20(1).png" alt="icon">
+            <a class="default-link" href="jobs.html">Jobs</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/circle%20(1).png" alt="icon">
+            <a class="default-link" href="Requires-Attention.html">Requires Attention</a>
+        </li>
+        <li>
+            <svg viewBox="0 0 24 24" style="display: block; color: rgba(0, 0, 0, 0.87); fill: rgb(117, 117, 117); height: 24px; width: 24px; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; margin:0 12px;"><path d="M17 16l-4-4V8.82C14.16 8.4 15 7.3 15 6c0-1.66-1.34-3-3-3S9 4.34 9 6c0 1.3.84 2.4 2 2.82V12l-4 4H3v5h5v-3.05l4-4.2 4 4.2V21h5v-5h-4z"></path></svg>
+            <a class="default-link" href="Order-Sorting.html">Order Sorting</a>
+        </li>
+        <li>
+            <svg viewBox="0 0 24 24" style="display: block; color: rgba(0, 0, 0, 0.87); fill: rgb(117, 117, 117); height: 24px; width: 24px; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; margin:0 12px;"><path d="M17 16l-4-4V8.82C14.16 8.4 15 7.3 15 6c0-1.66-1.34-3-3-3S9 4.34 9 6c0 1.3.84 2.4 2 2.82V12l-4 4H3v5h5v-3.05l4-4.2 4 4.2V21h5v-5h-4z"></path></svg>
+            <a class="default-link" href="Order-Return.html">Orders Return</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/upload.png" alt="icon">
+            <a class="default-link" href="Upload-Orders.html">Upload Orders</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/route%20(1).png" alt="icon">
+            <a  class="default-link" href="Orders-Routing.html">Orders Routing</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/box%20(1).png" alt="icon">
+            <a class="default-link" href="Package-New.html">Package New</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/list%20(1).png" alt="icon">
+            <a class="default-link" href="Orders-NBHD.html">Orders In NBHD</a>
+        </li>
+        <li>
+            <svg viewBox="0 0 24 24" style="display: block; color: rgba(0, 0, 0, 0.87); fill: rgb(117, 117, 117); height: 24px; width: 24px; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; margin:0 12px;"><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"></path></svg>
+            <a class="default-link" href="Areas.html">Areas</a>
+        </li>
+        <li>
+            <svg viewBox="0 0 24 24" style="display: block; color: rgba(0, 0, 0, 0.87); fill: rgb(117, 117, 117); height: 24px; width: 24px; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; margin:0 12px;"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"></path></svg>
+            <a class="default-link" href="Bad-Addresses.html">Bad Addresses</a>
+        </li>
+    </ul>
+    <h6 class="p-3"><b>Packages</b></h6>
+    <ul class="list-group p-0">
+        <li>
+            <img class="ml-2 mr-2" src="images/box%20(1).png" alt="icon">
+            <a class="default-link" href="Service-Types.html">Service Types</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/box%20(1).png" alt="icon">
+            <a class="default-link" href="Package-Rules.html">Package Rules</a>
+        </li>
+    </ul>
+    <h6 class="p-3"><b>Finance</b></h6>
+    <ul class="list-group p-0">
+        <li>
+            <img class="ml-2 mr-2" src="images/bank-building%20(1).png" alt="icon">
+            <a class="default-link" href="Finance-orders.html">Finance orders</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/wallet-filled-money-tool%20(1).png" alt="icon">
+            <a class="default-link" href="Finance-Settlement.html">Finance Settlement</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/download%20(1).png" alt="icon">
+            <a class="default-link" href="Courier-Company.html">Courier Company COD Transfers</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/download%20(1).png" alt="icon">
+            <a  class="default-link" href="Customer-Transfers.html">Customer COD Transfers</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/transfer%20(1).png" alt="icon">
+            <a class="default-link" href="Customer-Balance.html">Customer COD Balance</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/car%20(1).png" alt="icon">
+            <a class="default-link" href="Driver-Liability.html">Driver Liability</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/attention.png" alt="icon">
+            <a class="default-link" href="Order-Exceptions.html">Order Exceptions</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/cashier-machine.png" alt="icon">
+            <a class="default-link" href="Cashiers.html">Cashiers</a>
+        </li>
+    </ul>
+    <h6 class="p-3"><b>Courier Companies</b></h6>
+    <ul class="list-group p-0">
+        <li>
+            <img class="ml-2 mr-2" src="images/suitcase%20(1).png" alt="icon">
+            <a class="default-link" href="Courier-Companies.html">Courier Companies</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/group%20(1).png" alt="icon">
+            <a class="default-link" href="Courier-User.html">Courier Company User</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/driver-license%20(1).png" alt="icon">
+            <a class="default-link" href="Driver.html">Driver</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/audit%20(1).png" alt="icon">
+            <a  class="default-link" href="Driver-Attendance.html">Driver Attendance</a>
+        </li>
+        <li>
+            <svg viewBox="0 0 24 24" style="display: block; color: rgba(0, 0, 0, 0.87); fill: rgb(117, 117, 117); height: 24px; width: 24px; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; margin: 12px;"><path d="M2,3H22C23.05,3 24,3.95 24,5V19C24,20.05 23.05,21 22,21H2C0.95,21 0,20.05 0,19V5C0,3.95 0.95,3 2,3M14,6V7H22V6H14M14,8V9H21.5L22,9V8H14M14,10V11H21V10H14M8,13.91C6,13.91 2,15 2,17V18H14V17C14,15 10,13.91 8,13.91M8,6A3,3 0 0,0 5,9A3,3 0 0,0 8,12A3,3 0 0,0 11,9A3,3 0 0,0 8,6Z"></path></svg>
+            <a  class="default-link" href="Drivers-Dashboard.html">Drivers Dashboard</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/radar%20(1).png" alt="icon">
+            <a class="default-link" href="Radar.html">Radar</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/lorry%20(1).png" alt="icon">
+            <a class="default-link" href="Vehicles.html">Vehicles</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/warehouse%20(1).png" alt="icon">
+            <a class="default-link" href="Warehouse.html">Warehouses</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/clock%20(1).png" alt="icon">
+            <a class="default-link" href="Timeslots.html">Timeslots</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/wall-clock%20(1).png" alt="icon">
+            <a class="default-link" href="Timeslot-Availability.html">Timeslot Availability</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/location%20(1).png" alt="icon">
+            <a class="default-link" href="Neighborhoods.html">Neighborhoods</a>
+        </li>
+    </ul>
+    <h6 class="p-3"><b>Customers</b></h6>
+    <ul class="list-group p-0">
+        <li>
+            <img class="ml-2 mr-2" src="images/group%20(1).png" alt="icon">
+            <a class="default-link" href="Customer.html">Customers</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/gift%20(1).png" alt="icon">
+            <a class="default-link" href="Promos.html">Promos</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/feedback%20(1).png" alt="icon">
+            <a class="default-link" href="Customer-Feedback.html">Customer Feedback</a>
+        </li>
+    </ul>
+    <h6 class="p-3"><b>Users</b></h6>
+    <ul class="list-group p-0">
+        <li>
+            <img class="ml-2 mr-2" src="images/group%20(1).png" alt="icon">
+            <a class="default-link" href="Users.html">Users</a>
+        </li>
+    </ul>
+    <h6 class="p-3"><b>Account</b></h6>
+    <ul class="list-group p-0">
+        <li>
+            <img class="ml-2 mr-2" src="images/profile-user%20(1).png" alt="icon">
+            <a class="default-link" href="Billing.html">Billing</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/profile-user%20(1).png" alt="icon">
+            <a class="default-link" href="Account.html">Account</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/logout%20(1).png" alt="icon">
+            <a class="default-link" href="login.html">Log Out</a>
+        </li>
+    </ul>
+</div>
+
+<section class="header">
+    <div class="top-nav">
+        <div class="container-fluid pt-2 pb-2">
+            <div class="d-flex align-items-center justify-content-between">
+                <div id="logo-bars" class="d-flex align-items-center">
+                    <div class="bars-toggle ml-3 mr-3">
+                        <span class="bar-1"></span>
+                        <span class="bar-2"></span>
+                        <span class="bar-3"></span>
+                    </div>
+                    <div class="logo-top ml-2 mr-2">
+                        <img style="width: 130px;" src="images/logo.svg" alt="logo">
+                        <span class="ml-4 mr-4">Dashboard</span>
+                    </div>
+                </div>
+                <a type="button" class="default-link" data-toggle="modal" data-target="#filter"><img width="22px" src="images/filter-results-button.png" alt="icon"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="chart-body">
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-3 mb-3">
+                <div class="chart-box">
+                    <div id="chart" class="c3-chart"></div>
+                    <div class="y-define">
+                        <h5 class="chart-title">:OFD</h5>
+                        <h4 class="current-per">100.00%</h4>
+                    </div>
+                    <div class="x-define">
+                        <span class="x-line"></span>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h6 class=""><b>TO DISPATCH: <span>10</span></b></h6>
+                            <h6 class=""><b>DISPATCHED: <span>10</span></b></h6>
+                            <h6 class=""><b>NOT DISPATCHED: <span>0</span></b></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-3 mb-3">
+                <div class="chart-box NA">
+                    <div id="chart1" class="c3-chart"></div>
+                    <div class="y-define">
+                        <h5 class="chart-title">:DEA</h5>
+                        <h4 class="current-per">0.00%</h4>
+                    </div>
+                    <div class="x-define">
+                        <span class="x-line"></span>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h6 class=""><b>PROMISED: <span>10</span></b></h6>
+                            <h6 class=""><b>ATTEMPTED: <span>10</span></b></h6>
+                            <h6 class=""><b>NOT ATTEMPTED: <span>0</span></b></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-3 mb-3">
+                <div class="chart-box">
+                    <div id="chart2" class="c3-chart"></div>
+                    <div class="y-define">
+                        <h5 class="chart-title">:FDDS</h5>
+                        <h4 class="current-per">100.00%</h4>
+                    </div>
+                    <div class="x-define">
+                        <span class="x-line"></span>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h6 class=""><b>FIRST ATTEMPTS: <span>10</span></b></h6>
+                            <h6 class=""><b>FIRST SUCCESS ATTEMPTS: <span>10</span></b></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-3 mb-3">
+                <div class="chart-box">
+                    <div id="chart3" class="c3-chart"></div>
+                    <div class="y-define">
+                        <h5 class="chart-title">:OCC</h5>
+                    </div>
+                    <div class="x-define">
+                        <span class="x-line"></span>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h6 class=""><b>TODAY: <span>10</span></b></h6>
+                            <h6 class=""><b>CURRENT WEEK: <span>10</span></b></h6>
+                            <h6 class=""><b>CURRENT MONTH: <span>0</span></b></h6>
+                            <h6 class=""><b>TOTAL: <span>0</span></b></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-3 mb-3">
+                <div class="chart-box">
+                    <div id="chart4" class="c3-chart"></div>
+                    <div class="y-define">
+                        <h5 class="chart-title">:APT</h5>
+                    </div>
+                    <div class="x-define">
+                        <span class="x-line"></span>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h6 class=""><b>TODAY: <span>10</span></b></h6>
+                            <h6 class=""><b>CURRENT WEEK: <span>10</span></b></h6>
+                            <h6 class=""><b>CURRENT MONTH: <span>0</span></b></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-3 mb-3">
+                <div class="chart-box">
+                    <div id="chart5" class="c3-chart"></div>
+                    <div class="y-define">
+                        <h5 class="chart-title">:ADT</h5>
+                    </div>
+                    <div class="x-define">
+                        <span class="x-line"></span>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h6 class=""><b>TODAY: <span>10</span></b></h6>
+                            <h6 class=""><b>CURRENT WEEK: <span>10</span></b></h6>
+                            <h6 class=""><b>CURRENT MONTH: <span>0</span></b></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 mb-4">
+            <div class="col-12">
+                <div class="grid-chart">
+                    <h5>ETD VS ATD</h5>
+                    <div id="ETD-ATD"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 mb-4">
+            <div class="col-lg-8 col-12">
+                <div class="bar-chart">
+                    <div class="d-flex align-items-center justify-content-between mt-3 mb-3">
+                        <h6>KPI</h6>
+                        <div class="position-relative">
+                            <select class="nice-select default-input" name="sort" multiple>
+                                <option selected value="">By Courier Company</option>
+                                <option value="">By City</option>
+                            </select>
+                            <span class="custom-line"></span>
+                        </div>
+                    </div>
+                    <div id="bar-chart"></div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="chart-box mt-3 mb-3">
+                    <div id="DSR-chart" class="c3-chart"></div>
+                    <div class="y-define">
+                        <h5 class="chart-title">:DSR</h5>
+                        <h4 class="current-per">100.00%</h4>
+                    </div>
+                    <div class="x-define">
+                        <span class="x-line"></span>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h6 class=""><b>TODAY: <span>10</span></b></h6>
+                            <h6 class=""><b>CURRENT WEEK: <span>10</span></b></h6>
+                            <h6 class=""><b>CURRENT MONTH: <span>0</span></b></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="white-box mt-3 mb-3">
+                    <label class="position-relative w-100 mt-2 mb-2">
+                        <input class="default-input" type="text" placeholder="">
+                        <span class="custom-line"></span>
+                        <span class="custom-label">Track Shipment</span>
+                    </label>
+                    <span>Search term can be an awb or reference id, or phone number</span>
+                </div>
+                <div class="chart-box mt-3 mb-3 NA">
+                    <div id="RTO-chart" class="c3-chart"></div>
+                    <div class="y-define">
+                        <h5 class="chart-title">:RTO</h5>
+                        <h4 class="current-per">0.00%</h4>
+                    </div>
+                    <div class="x-define">
+                        <span class="x-line"></span>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h6 class=""><b>DISPATCHED: <span>10</span></b></h6>
+                            <h6 class=""><b>RTO COUNT: <span>20</span></b></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 mb-4">
+            <div class="col-lg-8 col-12">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="white-box text-chart">
+                            <div class="d-flex align-items-center flex-column mt-3">
+                                <h5><b>100.00%</b></h5>
+                                <h6 class="text-secondary"><b>DELIVERY ATTEMPTS</b></h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <p>ATTEMPTS: <span>12</span></p>
+                                <p>SUCCESS: <span>12</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="white-box text-chart">
+                            <div class="d-flex align-items-center flex-column mt-3">
+                                <h6 class="text-secondary"><b>DELIVERY ATTEMPTS</b></h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-around mt-4">
+                                <h6 class="d-flex align-items-center flex-column"><span>Inbound</span> <span>12</span></h6>
+                                <h6 class="d-flex align-items-center flex-column"><span>Outbound</span> <span>12</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="white-box text-chart">
+                            <div class="d-flex align-items-center flex-column mt-3">
+                                <h5><b>100.00%</b></h5>
+                                <h6 class="text-secondary"><b>PICK UP RATE</b></h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <p>CREATED: <span>12</span></p>
+                                <p>PICKED UP: <span>12</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="white-box text-chart">
+                            <div class="d-flex align-items-center flex-column mt-3">
+                                <h6 class="text-secondary"><b>DELIVERY ATTEMPTS</b></h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <p>PROMISED: <span>12</span></p>
+                                <p>DELIVERED: <span>12</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="COD-chart">
+                    <h5 class="text-secondary mt-3">Cash On Delivery</h5>
+                    <div class="d-flex align-items-center justify-content-between mt-4">
+                        <div class="d-flex flex-column">
+                            <h6>Payable COD</h6>
+                            <h6>Total COD</h6>
+                        </div>
+                        <div class="d-flex flex-column align-items-end">
+                            <h5 class="text-danger"><b>SAR 0.00</b></h5>
+                            <h6 class=""><b>SAR 84,915.06</b></h6>
+                        </div>
+                    </div>
+                    <div id="COD-chart"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 mb-4">
+            <div class="col-12">
+                <div class="grid-chart">
+                    <h5>DISPATCHED VS ATTEMPTED</h5>
+                    <div id="DIS-ATT"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 mb-4">
+            <div class="col-12">
+                <div class="white-box">
+                    <div class="d-flex align-items-center justify-content-between mt-3 mb-4">
+                        <h6 class="m-0 text-secondary">GOOGLE HEAT MAP WIDGET</h6>
+                        <a class="default-link" data-toggle="modal" data-target="#heat-map-filter"><img width="20px" src="images/menu.png" alt=""></a>
+                    </div>
+                    <div id="map" style="height: 400px"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 mb-4">
+            <div class="col-md-8 col-12">
+                <div class="white-box">
+                    <div class="d-flex align-items-center justify-content-between mt-3 mb-4">
+                        <h6 class="m-0"><b>Latest Alerts</b></h6>
+                        <a class="default-link text-danger link-table" href="Radar.html"><b>Show in Radar</b></a>
+                    </div>
+                    <div class="overflow-auto">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                            <tr>
+                                <th scope="col">Driver Phone</th>
+                                <th scope="col">Count</th>
+                                <th scope="col">Alert</th>
+                                <th scope="col">Driver</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>Otto</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="white-box">
+                    <h6 class="mt-3 mb-4"><b>Top Agents</b></h6>
+                    <div class="overflow-auto">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                            <tr class="text-center">
+                                <th scope="col">Customer</th>
+                                <th scope="col">Total Orders:</th>
+                                <th scope="col">Rating</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="d-flex align-items-center">
+                                            <span class="user-circle bg-warning">DS</span>
+                                            <span><b>tawsela graffiti</b></span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>
+                                    <div class="d-flex justify-content-center">
+                                        <span class="text-success">150</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex justify-content-center">
+                                        <span class="boxRte-table plus">5+</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 mb-4">
+            <div class="col-12">
+                <div class="white-box">
+                    <div class="d-flex align-items-center justify-content-between mt-3 mb-4">
+                        <h6 class="m-0 text-secondary">Top Customers</h6>
+                        <a class="default-link text-danger link-table" href="Customer.html"><b>Show in Customers</b></a>
+                    </div>
+                    <div class="overflow-auto">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                            <tr class="text-center">
+                                <th scope="col">Customer</th>
+                                <th scope="col">Order Count:</th>
+                                <th scope="col">Rating</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="d-flex align-items-center">
+                                            <span class="user-circle bg-warning">DS</span>
+                                            <span><b>tawsela graffiti</b></span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>
+                                    <div class="d-flex justify-content-center">
+                                        <span class="text-success">150</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex justify-content-center">
+                                        <span class="boxRte-table plus">5+</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="d-flex align-items-center">
+                                            <span class="user-circle bg-warning">DS</span>
+                                            <span><b>tawsela graffiti</b></span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>
+                                    <div class="d-flex justify-content-center">
+                                        <span class="text-success">150</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex justify-content-center">
+                                        <span class="boxRte-table min">5-</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="d-flex align-items-center">
+                                            <span class="user-circle bg-warning">DS</span>
+                                            <span><b>tawsela graffiti</b></span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>
+                                    <div class="d-flex justify-content-center">
+                                        <span class="text-success">150</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex justify-content-center">
+                                        <span class="boxRte-table Na">-</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--heat-map-filter modal-->
+<div class="modal fade" id="heat-map-filter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered Add-Card" role="document">
+        <div class="modal-content">
+            <div class="modal-title modal-header">
+                <h5 id="exampleModalCenterTitle">Heat Map Filter</h5>
+            </div>
+            <div class="modal-body bg-white">
+                <form>
+                    <div class="row">
+                        <div class="col-12 mt-2 mb-2 position-relative">
+                            <select class="nice-select default-input" name="sort" multiple>
+                                <option selected disabled value="">Is Pickup</option>
+                                <option value="">Yes</option>
+                                <option value="">No</option>
+                            </select>
+                            <span class="custom-line"></span>
+                        </div>
+                        <div class="col-12 mt-2 mb-2">
+                            <label class="position-relative w-100">
+                                <select class="select2 default-input" name="states[]" multiple="multiple">
+                                    <option value="">Region center</option>
+                                    <option value="">Region center</option>
+                                    <option value="">Region center</option>
+                                </select>
+                                <span class="floatLabel">Location Source Types</span>
+                            </label>
+                        </div>
+                        <div class="col-12 mt-2 mb-2">
+                            <label class="position-relative w-100">
+                                <input class="default-input" type="text" placeholder="">
+                                <span class="custom-line"></span>
+                                <span class="custom-label">Customer</span>
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-12 mt-2 mb-2">
+                            <label class="position-relative w-100">
+                                <input class="default-input flatpickr" type="text" placeholder="">
+                                <span class="custom-line"></span>
+                                <span class="custom-label">date</span>
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-12 mt-2 mb-2">
+                            <label class="position-relative w-100">
+                                <input class="default-input timepicker" type="text" placeholder="">
+                                <span class="custom-line"></span>
+                                <span class="custom-label">time</span>
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-12 mt-2 mb-2">
+                            <label class="position-relative w-100">
+                                <input class="default-input flatpickr" type="text" placeholder="">
+                                <span class="custom-line"></span>
+                                <span class="custom-label">date</span>
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-12 mt-2 mb-2">
+                            <label class="position-relative w-100">
+                                <input class="default-input timepicker" type="text" placeholder="">
+                                <span class="custom-line"></span>
+                                <span class="custom-label">time</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn">SUBMIT</button>
+                    <button type="button" data-dismiss="modal" class="btn">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end heat-map-filter modal-->
+
+<!--heat-map-filter modal-->
+<div class="modal fade" id="filter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered Add-Card" role="document">
+        <div class="modal-content">
+            <div class="modal-title modal-header">
+                <h5>Filter</h5>
+            </div>
+            <div class="modal-body bg-white">
+                <form>
+                    <div class="row">
+                        <div class="col-12 mt-2 mb-2">
+                            <label class="position-relative w-100">
+                                <select class="select2 default-input" name="states[]" multiple="multiple">
+                                    <option value="">Region center</option>
+                                    <option value="">Region center</option>
+                                    <option value="">Region center</option>
+                                </select>
+                                <span class="floatLabel">Select Customers</span>
+                            </label>
+                        </div>
+                        <div class="col-12 mt-2 mb-2">
+                            <label class="position-relative w-100">
+                                <input class="default-input" type="text" placeholder="">
+                                <span class="custom-line"></span>
+                                <span class="custom-label">Courier Companies</span>
+                            </label>
+                        </div>
+                        <div class="col-12 mt-2 mb-2">
+                            <label class="position-relative w-100">
+                                <input class="default-input" type="text" placeholder="">
+                                <span class="custom-line"></span>
+                                <span class="custom-label">Driver</span>
+                            </label>
+                        </div>
+                        <div class="col-12 mt-2 mb-2">
+                            <label class="position-relative w-100">
+                                <input class="default-input" type="text" placeholder="">
+                                <span class="custom-line"></span>
+                                <span class="custom-label">Warehouse</span>
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-12 mt-2 mb-2">
+                            <label class="position-relative w-100">
+                                <input class="default-input flatpickr" type="text" placeholder="">
+                                <span class="custom-line"></span>
+                                <span class="custom-label">date</span>
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-12 mt-2 mb-2">
+                            <label class="position-relative w-100">
+                                <input class="default-input timepicker" type="text" placeholder="">
+                                <span class="custom-line"></span>
+                                <span class="custom-label">time</span>
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-12 mt-2 mb-2">
+                            <label class="position-relative w-100">
+                                <input class="default-input flatpickr" type="text" placeholder="">
+                                <span class="custom-line"></span>
+                                <span class="custom-label">date</span>
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-12 mt-2 mb-2">
+                            <label class="position-relative w-100">
+                                <input class="default-input timepicker" type="text" placeholder="">
+                                <span class="custom-line"></span>
+                                <span class="custom-label">time</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn">SUBMIT</button>
+                    <button type="button" data-dismiss="modal" class="btn">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end heat-map-filter modal-->
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.nice-select.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/bootstrap-select-country.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/d3-5.8.2.min.js"></script>
+<script src="js/c3.min.js"></script>
+<!--<script src="js/dataTables.select.min.js"></script>-->
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/flatpickr.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn3NtsJ5lgHSIxUJ4AuqAMm2RXldDDjN8&libraries=places&language=ar"></script>
+<script src="js/location-picker.js"></script>
+<script src="js/main.js"></script>
+<script src="charts/charts.js"></script>
+<script>
+    var latlng =new google.maps.LatLng(35.137879, -82.836914);
+    var map = new google.maps.Map(document.getElementById('map_canvas'), {
+        zoom: 11,
+        center: new google.maps.LatLng(35.137879, -82.836914),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var myMarker = new google.maps.Marker({
+        position: new google.maps.LatLng(47.651968, 9.478485),
+        draggable: true
+    });
+
+    var geocoder = new google.maps.Geocoder();
+    google.maps.event.addListener(myMarker, 'dragend', function (event) {
+        geocoder.geocode({'latLng': latlng}, function(results, status) {
+            if (status === 'OK') {
+                console.log(results)
+                document.getElementById('current').innerHTML = '<input id="address" class="location">' + results[1].formatted_address +'>';
+
+            }
+        });
+    });
+
+    google.maps.event.addListener(myMarker, 'dragstart', function(evt) {
+    });
+
+    map.setCenter(myMarker.position);
+    myMarker.setMap(map);
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#map').locationpicker({
+            inputBinding: {
+                latitudeInput: $("#lat"),
+                longitudeInput: $("#lng"),
+                locationNameInput: $("#address")
+            },
+        });
+        navigator.geolocation.getCurrentPosition(function(position) {
+            $('#map').locationpicker('location', {
+                latitude: position.coords.latitude,
+                longitude: position.coords.longitude,
+                inputBinding: {
+                    latitudeInput: $("#lat"),
+                    longitudeInput: $("#lng"),
+                    locationNameInput: $("#address")
+                },
+            });
+        });
+    })
+
+</script>
+</body>
+</html>

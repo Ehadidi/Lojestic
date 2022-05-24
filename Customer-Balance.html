@@ -1,0 +1,1282 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link href="css/select2.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/flatpickr.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    </style>
+    <link rel="stylesheet" href="css/styleEn.css">
+    <title>Customer COD Balance</title>
+</head>
+<body style="background-color: #f1f1f1">
+<div class="overlay-layer-modal"></div>
+<div class="overlay-layer"></div>
+
+<div class="side-bar">
+    <h6 class="p-3"><b>Dashboard</b></h6>
+    <ul class="list-group p-0">
+        <li>
+            <img class="ml-2 mr-2" src="images/layout.png" alt="icon">
+            <a class="default-link" href="Dashboard.html">Dashboard</a>
+        </li>
+    </ul>
+    <h6 class="p-3"><b>orders</b></h6>
+    <ul class="list-group p-0">
+        <li>
+            <img class="ml-2 mr-2" src="images/lorry%20(1).png" alt="icon">
+            <a class="default-link" href="Orders.html">Orders</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/folder%20(1).png" alt="icon">
+            <a class="default-link" href="jobs.html">Jobs</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/circle%20(1).png" alt="icon">
+            <a class="default-link" href="Requires-Attention.html">Requires Attention</a>
+        </li>
+        <li>
+            <svg viewBox="0 0 24 24" style="display: block; color: rgba(0, 0, 0, 0.87); fill: rgb(117, 117, 117); height: 24px; width: 24px; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; margin:0 12px;"><path d="M17 16l-4-4V8.82C14.16 8.4 15 7.3 15 6c0-1.66-1.34-3-3-3S9 4.34 9 6c0 1.3.84 2.4 2 2.82V12l-4 4H3v5h5v-3.05l4-4.2 4 4.2V21h5v-5h-4z"></path></svg>
+            <a class="default-link" href="Order-Sorting.html">Order Sorting</a>
+        </li>
+        <li>
+            <svg viewBox="0 0 24 24" style="display: block; color: rgba(0, 0, 0, 0.87); fill: rgb(117, 117, 117); height: 24px; width: 24px; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; margin:0 12px;"><path d="M17 16l-4-4V8.82C14.16 8.4 15 7.3 15 6c0-1.66-1.34-3-3-3S9 4.34 9 6c0 1.3.84 2.4 2 2.82V12l-4 4H3v5h5v-3.05l4-4.2 4 4.2V21h5v-5h-4z"></path></svg>
+            <a class="default-link" href="Order-Return.html">Orders Return</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/upload.png" alt="icon">
+            <a class="default-link" href="Upload-Orders.html">Upload Orders</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/route%20(1).png" alt="icon">
+            <a  class="default-link" href="Orders-Routing.html">Orders Routing</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/box%20(1).png" alt="icon">
+            <a class="default-link" href="Package-New.html">Package New</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/list%20(1).png" alt="icon">
+            <a class="default-link" href="Orders-NBHD.html">Orders In NBHD</a>
+        </li>
+        <li>
+            <svg viewBox="0 0 24 24" style="display: block; color: rgba(0, 0, 0, 0.87); fill: rgb(117, 117, 117); height: 24px; width: 24px; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; margin:0 12px;"><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"></path></svg>
+            <a class="default-link" href="Areas.html">Areas</a>
+        </li>
+        <li>
+            <svg viewBox="0 0 24 24" style="display: block; color: rgba(0, 0, 0, 0.87); fill: rgb(117, 117, 117); height: 24px; width: 24px; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; margin:0 12px;"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"></path></svg>
+            <a class="default-link" href="Bad-Addresses.html">Bad Addresses</a>
+        </li>
+    </ul>
+    <h6 class="p-3"><b>Packages</b></h6>
+    <ul class="list-group p-0">
+        <li>
+            <img class="ml-2 mr-2" src="images/box%20(1).png" alt="icon">
+            <a class="default-link" href="Service-Types.html">Service Types</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/box%20(1).png" alt="icon">
+            <a class="default-link" href="Package-Rules.html">Package Rules</a>
+        </li>
+    </ul>
+    <h6 class="p-3"><b>Finance</b></h6>
+    <ul class="list-group p-0">
+        <li>
+            <img class="ml-2 mr-2" src="images/bank-building%20(1).png" alt="icon">
+            <a class="default-link" href="Finance-orders.html">Finance orders</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/wallet-filled-money-tool%20(1).png" alt="icon">
+            <a class="default-link" href="Finance-Settlement.html">Finance Settlement</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/download%20(1).png" alt="icon">
+            <a class="default-link" href="Courier-Company.html">Courier Company COD Transfers</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/download%20(1).png" alt="icon">
+            <a  class="default-link" href="Customer-Transfers.html">Customer COD Transfers</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/transfer%20(1).png" alt="icon">
+            <a class="default-link" href="Customer-Balance.html">Customer COD Balance</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/car%20(1).png" alt="icon">
+            <a class="default-link" href="Driver-Liability.html">Driver Liability</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/attention.png" alt="icon">
+            <a class="default-link" href="Order-Exceptions.html">Order Exceptions</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/cashier-machine.png" alt="icon">
+            <a class="default-link" href="Cashiers.html">Cashiers</a>
+        </li>
+    </ul>
+    <h6 class="p-3"><b>Courier Companies</b></h6>
+    <ul class="list-group p-0">
+        <li>
+            <img class="ml-2 mr-2" src="images/suitcase%20(1).png" alt="icon">
+            <a class="default-link" href="Courier-Companies.html">Courier Companies</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/group%20(1).png" alt="icon">
+            <a class="default-link" href="Courier-User.html">Courier Company User</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/driver-license%20(1).png" alt="icon">
+            <a class="default-link" href="Driver.html">Driver</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/audit%20(1).png" alt="icon">
+            <a  class="default-link" href="Driver-Attendance.html">Driver Attendance</a>
+        </li>
+        <li>
+            <svg viewBox="0 0 24 24" style="display: block; color: rgba(0, 0, 0, 0.87); fill: rgb(117, 117, 117); height: 24px; width: 24px; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; margin: 12px;"><path d="M2,3H22C23.05,3 24,3.95 24,5V19C24,20.05 23.05,21 22,21H2C0.95,21 0,20.05 0,19V5C0,3.95 0.95,3 2,3M14,6V7H22V6H14M14,8V9H21.5L22,9V8H14M14,10V11H21V10H14M8,13.91C6,13.91 2,15 2,17V18H14V17C14,15 10,13.91 8,13.91M8,6A3,3 0 0,0 5,9A3,3 0 0,0 8,12A3,3 0 0,0 11,9A3,3 0 0,0 8,6Z"></path></svg>
+            <a  class="default-link" href="Drivers-Dashboard.html">Drivers Dashboard</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/radar%20(1).png" alt="icon">
+            <a class="default-link" href="Radar.html">Radar</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/lorry%20(1).png" alt="icon">
+            <a class="default-link" href="Vehicles.html">Vehicles</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/warehouse%20(1).png" alt="icon">
+            <a class="default-link" href="Warehouse.html">Warehouses</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/clock%20(1).png" alt="icon">
+            <a class="default-link" href="Timeslots.html">Timeslots</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/wall-clock%20(1).png" alt="icon">
+            <a class="default-link" href="Timeslot-Availability.html">Timeslot Availability</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/location%20(1).png" alt="icon">
+            <a class="default-link" href="Neighborhoods.html">Neighborhoods</a>
+        </li>
+    </ul>
+    <h6 class="p-3"><b>Customers</b></h6>
+    <ul class="list-group p-0">
+        <li>
+            <img class="ml-2 mr-2" src="images/group%20(1).png" alt="icon">
+            <a class="default-link" href="Customers.html">Customers</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/gift%20(1).png" alt="icon">
+            <a class="default-link" href="Promos.html">Promos</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/feedback%20(1).png" alt="icon">
+            <a class="default-link" href="Customer-Feedback.html">Customer Feedback</a>
+        </li>
+    </ul>
+    <h6 class="p-3"><b>Users</b></h6>
+    <ul class="list-group p-0">
+        <li>
+            <img class="ml-2 mr-2" src="images/group%20(1).png" alt="icon">
+            <a class="default-link" href="Users.html">Users</a>
+        </li>
+    </ul>
+    <h6 class="p-3"><b>Account</b></h6>
+    <ul class="list-group p-0">
+        <li>
+            <img class="ml-2 mr-2" src="images/profile-user%20(1).png" alt="icon">
+            <a class="default-link" href="Billing.html">Billing</a>
+        </li>
+        <li>
+            <img class="ml-2 mr-2" src="images/logout%20(1).png" alt="icon">
+            <a class="default-link" href="login.html">Log Out</a>
+        </li>
+    </ul>
+</div>
+
+<section class="header">
+    <div class="top-nav">
+        <div class="container-fluid pt-2 pb-2">
+            <div class="d-flex align-items-center justify-content-between">
+                <div id="logo-bars" class="d-flex align-items-center">
+                    <div class="bars-toggle ml-3 mr-3">
+                        <span class="bar-1"></span>
+                        <span class="bar-2"></span>
+                        <span class="bar-3"></span>
+                    </div>
+                    <div class="logo-top ml-2 mr-2">
+                        <img style="width: 130px;" src="images/logo.svg" alt="logo">
+                        <span class="ml-4 mr-4">Customer COD Balance</span>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center ml-2 mr-2">
+                    <a class="btn text-white" href="">Download Full Statement</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="search-inputs">
+    <div class="container-fluid">
+        <form class="row align-items-center">
+            <div class="col-md-3 col-sm-4 col-6">
+                <label class="position-relative w-100">
+                    <input class="default-input" type="text" placeholder="">
+                    <span class="custom-line"></span>
+                    <span class="custom-label">customer</span>
+                </label>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 position-relative nice-select-100">
+                <select class="nice-select default-input" name="sort" multiple>
+                    <option value="">This Month</option>
+                    <option value="">Previous Month</option>
+                    <option value="">Last 3 Month</option>
+                    <option value="">This Year</option>
+                    <option value="">Previous Year</option>
+                    <option selected value="">All Time</option>
+                    <option value="">Custom Date Range</option>
+                </select>
+                <span class="custom-line"></span>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6">
+                <label class="position-relative w-100">
+                    <input class="default-input flatpickr" type="text" placeholder="From Date">
+                    <span class="custom-line"></span>
+                </label>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6">
+                <label class="position-relative w-100">
+                    <input class="default-input flatpickr" type="text" placeholder="To Date">
+                    <span class="custom-line"></span>
+                </label>
+            </div>
+        </form>
+    </div>
+</section>
+
+<div class="white-box">
+    <p class="mb-0"><b>Your current ending balance: <span>0.00 SAR</span></b></p>
+</div>
+
+<section class="tables">
+    <div class="container-fluid mt-3 pt-3 overflow-auto">
+        <div class="d-flex align-items-center justify-content-between" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <div class="d-flex flex-column">
+                <p class="mb-1"><b>Ending Balance: <span>0.00 SAR</span></b></p>
+                <p class="text-secondary mb-1"><b>24th Sep 2021 - 24th Oct 2021</b></p>
+            </div>
+            <h6><i class="fas fa-sort-down"></i></h6>
+        </div>
+        <div class="collapse" id="collapseExample">
+            <button class="btn"><h5 class="mb-0">Download Statement</h5></button>
+            <div class="sheet-row">
+                <p class="text-secondary w-25 mb-0">Opening Balance</p>
+                <p class="w-25">0.00</p>
+                <p class="w-25"></p>
+                <p class="w-25"></p>
+            </div>
+            <div class="sheet-row">
+                <p class="text-secondary mb-0 w-25">COD Amount</p>
+                <p class="w-25">356.00</p>
+                <p class="w-25">For 2 delivered shipments</p>
+                <p class="w-25"></p>
+            </div>
+            <div class="sheet-row">
+                <p class="text-secondary mb-0 w-25">Shipping Fee</p>
+                <p class="w-25">0.00</p>
+                <p class="w-25">deducted for 2 shipments</p>
+                <p class="w-25"></p>
+            </div>
+            <div class="sheet-row">
+                <p class="text-secondary mb-0 w-25">RTO fee</p>
+                <p class="w-25">0.00</p>
+                <p class="w-25">	deducted for 0 shipments</p>
+                <p class="w-25"></p>
+            </div>
+            <div class="sheet-row">
+                <p class="text-secondary mb-0 w-25">Paid out</p>
+                <p class="w-25">356.00</p>
+                <p class="w-25">	Paid out to your account</p>
+                <p class="w-25"></p>
+            </div>
+            <div class="sheet-row">
+                <p class="text-secondary mb-0 w-25">COD Fee</p>
+                <p class="w-25">0.00</p>
+                <p class="w-25">	</p>
+                <p class="w-25"></p>
+            </div>
+            <div class="sheet-row">
+                <p class="text-secondary mb-0 w-25">Bank transfer fee</p>
+                <p class="w-25">0.00</p>
+                <p class="w-25">One off charge for COD bank transfer</p>
+                <p class="w-25"></p>
+            </div>
+            <div class="sheet-row">
+                <p class="text-secondary mb-0 w-25">Your Ending Balance</p>
+                <p class="w-25">0.00</p>
+                <p class="w-25"></p>
+                <p class="w-25"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--filter modal-->
+<div id="filter-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-title">
+            <h4>Filter Order</h4>
+        </div>
+        <div class="modal-content position-relative">
+            <form class="form-content">
+                <div class="row form-row">
+                    <div class="col-lg-4 col-md-6 col-12 position-relative">
+                        <select class="js-example-basic-multiple default-input" name="states[]" multiple="multiple">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                        <button class="btn switch-plus"><i class="fas fa-plus-circle"></i></button>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 position-relative">
+                        <label class="position-relative w-100">
+                            <input class="default-input" type="text" placeholder="">
+                            <span class="custom-line"></span>
+                            <span class="custom-label">custom label</span>
+                        </label>
+                        <button class="btn switch-plus"><i class="fas fa-plus-circle"></i></button>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <select class="js-example-basic-multiple default-input" name="states[]" multiple="multiple">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+                    <div class="col-12 mt-2 mb-2">
+                        <div class="d-flex align-items-center">
+                            <label class="check-select">
+                                <input type="checkbox">
+                                <span class="check-custom"><i class="fas fa-check-square"></i></span>
+                            </label>
+                            <h6 class="mr-3 ml-3 mb-0">Include Exception</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-row">
+                    <div class="col-md-6 col-12">
+                        <select class="js-example-basic-multiple default-input" name="states[]" multiple="multiple">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <select class="js-example-basic-multiple default-input" name="states[]" multiple="multiple">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row row d-flex align-items-center">
+                    <div class="col-lg-6 col-12 mt-3">
+                        <div class="row">
+                            <div class="col-12"><h6><b>create Date</b></h6></div>
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <label class="position-relative w-100">
+                                    <input class="default-input flatpickr" type="text" placeholder="From Date">
+                                    <span class="custom-line"></span>
+                                </label>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <label class="position-relative w-100">
+                                    <input class="default-input timepicker" type="text" placeholder="From Time">
+                                    <span class="custom-line"></span>
+                                </label>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <label class="position-relative w-100">
+                                    <input class="default-input flatpickr" type="text" placeholder="To Date">
+                                    <span class="custom-line"></span>
+                                </label>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <label class="position-relative w-100">
+                                    <input class="default-input timepicker" type="text" placeholder="To Time">
+                                    <span class="custom-line"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 mt-3">
+                        <div class="row">
+                            <div class="col-12"><h6><b>Promise Date</b></h6></div>
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <label class="position-relative w-100">
+                                    <input class="default-input flatpickr" type="text" placeholder="From Date">
+                                    <span class="custom-line"></span>
+                                </label>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <label class="position-relative w-100">
+                                    <input class="default-input timepicker" type="text" placeholder="From Time">
+                                    <span class="custom-line"></span>
+                                </label>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <label class="position-relative w-100">
+                                    <input class="default-input flatpickr" type="text" placeholder="To Date">
+                                    <span class="custom-line"></span>
+                                </label>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <label class="position-relative w-100">
+                                    <input class="default-input timepicker" type="text" placeholder="To Time">
+                                    <span class="custom-line"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-row">
+                    <div class="col-12"><h6><b>Countries</b></h6></div>
+                    <div class="col-md-6 col-12">
+                        <label class="position-relative w-100">
+                            <input class="default-input" type="text" placeholder="">
+                            <span class="custom-line"></span>
+                            <span class="custom-label">From Country</span>
+                        </label>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <label class="position-relative w-100">
+                            <input class="default-input" type="text" placeholder="">
+                            <span class="custom-line"></span>
+                            <span class="custom-label">To Country</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="row form-row">
+                    <div class="col-12"><h6><b>Cities</b></h6></div>
+                    <div class="col-md-6 col-12 position-relative">
+                        <select class="js-example-basic-multiple default-input" name="states[]" multiple="multiple">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                        <button class="btn switch-plus"><i class="fas fa-plus-circle"></i></button>
+                    </div>
+                    <div class="col-md-6 col-12 position-relative">
+                        <select class="js-example-basic-multiple default-input" name="states[]" multiple="multiple">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                        <button class="btn switch-plus"><i class="fas fa-plus-circle"></i></button>
+                    </div>
+                </div>
+                <div class="row form-row">
+                    <div class="col-12"><h6><b>Neighborhoods</b></h6></div>
+                    <div class="col-md-6 col-12 position-relative">
+                        <select class="js-example-basic-multiple default-input" name="states[]" multiple="multiple">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                        <button class="btn switch-plus"><i class="fas fa-plus-circle"></i></button>
+                    </div>
+                    <div class="col-md-6 col-12 position-relative">
+                        <select class="js-example-basic-multiple default-input" name="states[]" multiple="multiple">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                        <button class="btn switch-plus"><i class="fas fa-plus-circle"></i></button>
+                    </div>
+                    <div class="col-12 mt-2 mb-2">
+                        <div class="d-flex align-items-center">
+                            <label class="check-select">
+                                <input type="checkbox">
+                                <span class="check-custom"><i class="fas fa-check-square"></i></span>
+                            </label>
+                            <h6 class="mr-3 ml-3 mb-0">Include Bad Addresses</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-row">
+                    <div class="col-12"><h6><b>Estimated Delivery</b></h6></div>
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <label class="position-relative w-100">
+                            <input class="default-input flatpickr" type="text" placeholder="From Date">
+                            <span class="custom-line"></span>
+                        </label>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <label class="position-relative w-100">
+                            <input class="default-input timepicker" type="text" placeholder="From Time">
+                            <span class="custom-line"></span>
+                        </label>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <label class="position-relative w-100">
+                            <input class="default-input flatpickr" type="text" placeholder="To Date">
+                            <span class="custom-line"></span>
+                        </label>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <label class="position-relative w-100">
+                            <input class="default-input timepicker" type="text" placeholder="To Time">
+                            <span class="custom-line"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="row form-row">
+                    <div class="col-lg-4 col-md-6 col-12 position-relative">
+                        <select class="js-example-basic-multiple default-input" name="states[]" multiple="multiple">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                        <button class="btn switch-plus"><i class="fas fa-plus-circle"></i></button>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <label class="position-relative w-100">
+                            <input class="default-input" type="text" placeholder="">
+                            <span class="custom-line"></span>
+                            <span class="custom-label">Company</span>
+                        </label>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 position-relative">
+                        <select class="nice-select default-input" name="sort" multiple>
+                            <option selected disabled value="">status</option>
+                            <option value="">status</option>
+                            <option value="">status</option>
+                        </select>
+                        <span class="custom-line"></span>
+                    </div>
+                </div>
+                <div class="row form-row">
+                    <div class="col-lg-4 col-md-6 col-12 position-relative">
+                        <select class="js-example-basic-multiple default-input" name="states[]" multiple="multiple">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                        <button class="btn switch-plus"><i class="fas fa-plus-circle"></i></button>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 position-relative">
+                        <select class="js-example-basic-multiple default-input" name="states[]" multiple="multiple">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                        <button class="btn switch-plus"><i class="fas fa-plus-circle"></i></button>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 position-relative">
+                        <select class="js-example-basic-multiple default-input" name="states[]" multiple="multiple">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                        <button class="btn switch-plus"><i class="fas fa-plus-circle"></i></button>
+                    </div>
+                </div>
+                <div class="row form-row">
+                    <div class="col-lg-2 col-6">
+                        <label class="position-relative w-100">
+                            <input class="default-input" type="text" placeholder="">
+                            <span class="custom-line"></span>
+                            <span class="custom-label">Pickup Timeslot</span>
+                        </label>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <label class="position-relative w-100">
+                            <input class="default-input" type="text" placeholder="">
+                            <span class="custom-line"></span>
+                            <span class="custom-label">Dropoff Timeslot</span>
+                        </label>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <label class="position-relative w-100">
+                            <input class="default-input" type="text" placeholder="">
+                            <span class="custom-line"></span>
+                            <span class="custom-label">Warehouse</span>
+                        </label>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <label class="position-relative w-100">
+                            <input class="default-input" type="text" placeholder="">
+                            <span class="custom-line"></span>
+                            <span class="custom-label">Destination Warehouse</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="row form-row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <label class="position-relative w-100">
+                            <input class="default-input" type="text" placeholder="">
+                            <span class="custom-line"></span>
+                            <span class="custom-label">Last Mile Driver</span>
+                        </label>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <label class="position-relative w-100">
+                            <input class="default-input" type="text" placeholder="">
+                            <span class="custom-line"></span>
+                            <span class="custom-label">Account Owner</span>
+                        </label>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <label class="position-relative w-100">
+                            <input class="default-input" type="text" placeholder="">
+                            <span class="custom-line"></span>
+                            <span class="custom-label">Sales Representative</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="row form-row">
+                    <div class="col-lg-4 col-md-6 col-12 position-relative">
+                        <select class="js-example-basic-multiple default-input" name="states[]" multiple="multiple">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                        <button class="btn switch-plus"><i class="fas fa-plus-circle"></i></button>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 position-relative">
+                        <select class="js-example-basic-multiple default-input" name="states[]" multiple="multiple">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                        <button class="btn switch-plus"><i class="fas fa-plus-circle"></i></button>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 position-relative">
+                        <select class="nice-select default-input" name="sort" multiple>
+                            <option selected disabled value="">status</option>
+                            <option value="">status</option>
+                            <option value="">status</option>
+                        </select>
+                        <span class="custom-line"></span>
+                    </div>
+                </div>
+                <div class="row form-row">
+                    <div class="col-lg-4 col-md-6 col-12 position-relative">
+                        <select class="js-example-basic-multiple default-input" name="states[]" multiple="multiple">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                        <button class="btn switch-plus"><i class="fas fa-plus-circle"></i></button>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 position-relative">
+                        <select class="js-example-basic-multiple default-input" name="states[]" multiple="multiple">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <label class="position-relative w-100">
+                            <input class="default-input" type="text" placeholder="">
+                            <span class="custom-line"></span>
+                            <span class="custom-label">Tags</span>
+                        </label>
+                    </div>
+                    <div class="col-12 mt-2 mb-2">
+                        <div class="d-flex align-items-center">
+                            <label class="check-select">
+                                <input type="checkbox">
+                                <span class="check-custom"><i class="fas fa-check-square"></i></span>
+                            </label>
+                            <h6 class="mr-3 ml-3 mb-0">Search History</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-row">
+                    <div class="col-12">
+                        <button type="button" class="btn">SUBMIT</button>
+                        <button type="button" class="btn" data-dismiss="modal">DISMISS</button>
+                        <button type="button" class="btn">CLEAR</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--end filter modal-->
+
+
+<!--order number modal-->
+<div id="order-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content position-relative">
+            <div class="modal-top">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-between align-items-center mb-4 w-75">
+                        <div class="d-flex flex-column">
+                            <p class="mb-0"><b>ORDERS : <span>965821458745</span></b></p>
+                            <p class="mb-0"><b>REF# : <span>366963</span></b></p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                    <span class="user-circle bg-white">
+                        <img src="images/plus.png" alt="">
+                    </span>
+                            <div class="d-flex flex-column">
+                                <span>CREATED</span>
+                                <span>TODAY 14:25</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img width="50px" src="images/clockUp.png" alt="">
+                            <div class="d-flex flex-column">
+                                <span>CREATED</span>
+                                <span>TODAY 14:25</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img width="50px" src="images/clockDown.png" alt="">
+                            <div class="d-flex flex-column">
+                                <span>CREATED</span>
+                                <span>TODAY 14:25</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-3 mb-4">
+                        <div class="d-flex align-items-center">
+                            <span class="user-circle bg-danger">SA</span>
+                            <div class="d-flex flex-column">
+                                <span style="font-size: 12px">CUSTOMER</span>
+                                <span>DESERT STEPS</span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <span class="text-center">Assigned to courier company</span>
+                            <span class="text-center">about 1 hour ago</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex flex-column align-items-end">
+                                <span style="font-size: 12px">COURIER COMPANY/DRIVER</span>
+                                <span>ALAALTRIQ</span>
+                            </div>
+                            <span class="user-circle bg-move">SA</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-5">
+                        <div class="nav" id="orderDetails-tab" role="tablist">
+                            <a class="default-link orderDetails-tab active" id="nav-brief-tab" data-toggle="tab" href="#nav-brief" role="tab" aria-controls="nav-brief" aria-selected="true">BRIEF</a>
+                            <a class="default-link orderDetails-tab" id="nav-customer-tab" data-toggle="tab" href="#nav-customer" role="tab" aria-controls="nav-customer" aria-selected="false">CUSTOMER</a>
+                            <a class="default-link orderDetails-tab" id="nav-courier-tab" data-toggle="tab" href="#nav-courier" role="tab" aria-controls="nav-courier" aria-selected="false">COURIER</a>
+                            <a class="default-link orderDetails-tab" id="nav-history-tab" data-toggle="tab" href="#nav-history" role="tab" aria-controls="nav-history" aria-selected="false">HISTORY</a>
+                            <a class="default-link orderDetails-tab" id="nav-map-tab" data-toggle="tab" href="#nav-map" role="tab" aria-controls="nav-map" aria-selected="false">MAP</a>
+                            <a class="default-link orderDetails-tab" id="nav-proofPayment-tab" data-toggle="tab" href="#nav-proofPayment" role="tab" aria-controls="nav-proofPayment" aria-selected="false">PROOF OF PAYMENT</a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <a href="" class="filter-btn btn default-link">ASSIGN DRIVER</a>
+                            <a href="" class="filter-btn btn default-link">GET AWB</a>
+                            <a href="" class="filter-btn btn default-link">AWBZ LABE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-tab-content">
+                <div class="tab-content overflow-hidden" id="orderDetails-tabContent">
+                    <div class="tab-pane comeRight show active" id="nav-brief" role="tabpanel" aria-labelledby="nav-brief-tab">
+                        <div class="row">
+                            <div class="col-md-6 col-12 mb-2">
+                                <div class="orderNumCol">
+                                    <div class="d-flex align-items-center">
+                                        <span class="bigCircle bg-success">DS</span>
+                                        <div class="d-flex flex-column mr-3 ml-3">
+                                            <p>SENDER</p>
+                                            <p>DESERT STEPS</p>
+                                            <p style="color: grey">+966966505174019</p>
+                                            <div class="d-flex align-items-center">
+                                                <span class="user-circle bg-info"><img width="18px" src="images/house-black-silhouette-without-door.png" alt=""></span>
+                                                <div class="d-flex flex-column mr-2 ml-2">
+                                                    <span>Saudi Arabia Riyadh</span>
+                                                    <span> الرياض. العريجاء الغربي, UNKNOWN</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 mb-2">
+                                <div class="orderNumCol">
+                                    <div class="d-flex align-items-center">
+                                        <span class="bigCircle bg-warning">DS</span>
+                                        <div class="d-flex flex-column mr-3 ml-3">
+                                            <p>RECIPIENT</p>
+                                            <p>DESERT STEPS</p>
+                                            <p style="color: grey">+966966505174019</p>
+                                            <div class="d-flex align-items-center">
+                                                <span class="user-circle bg-info"><img width="18px" src="images/house-black-silhouette-without-door.png" alt=""></span>
+                                                <div class="d-flex flex-column mr-2 ml-2">
+                                                    <span>Saudi Arabia Riyadh</span>
+                                                    <span> الرياض. العريجاء الغربي, UNKNOWN</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 mb-2">
+                                <div class="orderNumCol">
+                                    <h6 class="text-center"><b>ITEM DETAILS</b></h6>
+                                    <div class="d-flex align-items-center justify-content-between mt-1 mb-1">
+                                        <div class="d-flex align-items-center">
+                                            <img width="50px" src="images/boxs.png" alt="">
+                                            <div class="d-flex flex-column mr-2 ml-2">
+                                                <span>Chargeable Weight</span>
+                                                <span> 2 KG</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <span class="user-circle bg-success">PC</span>
+                                            <div class="d-flex flex-column">
+                                                <span style="font-size: 12px">Box Count</span>
+                                                <span>1/0</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img class="ml-2 mr-2" width="50px" src="images/saver.png" alt="">
+                                            <div class="d-flex flex-column">
+                                                <span>Service Type</span>
+                                                <span class="text-warning"><b>EXPRESS DELIVERY</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mt-1 mb-1">
+                                        <div class="d-flex align-items-center">
+                                            <svg class="imac-icon" viewBox="0 0 24 24"><path d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7l-2 3v1h8v-1l-2-3h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 12H3V4h18v10z"></path></svg>
+                                            <div class="d-flex flex-column mr-2 ml-2">
+                                                <span>Received Via :</span>
+                                                <span class="text-success"> <b>WEB</b></span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <span class="user-circle bg-danger">ريال</span>
+                                            <div class="d-flex flex-column">
+                                                <span style="font-size: 12px">Item Value</span>
+                                                <span>150</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <span class="user-circle bg-danger">ريال</span>
+                                            <div class="d-flex flex-column">
+                                                <span style="font-size: 12px">Selected Package</span>
+                                                <span class="text-danger"><b>DESERT STEPS</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-around mt-1 mb-1">
+                                        <div class="d-flex flex-column">
+                                            <span>Item Description / Special Instructions :</span>
+                                            <span>N/A</span>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <span>Attachments</span>
+                                            <span>N/A</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 mb-2">
+                                <div class="orderNumCol">
+                                    <h6 class="text-center"><b>PAYMENT INFO</b></h6>
+                                    <div class="d-flex align-items-center w-75 justify-content-between mt-3 mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <img width="50px" src="images/scanvisa.png" alt="">
+                                            <div class="d-flex flex-column mr-2 ml-2">
+                                                <span>Payment Method</span>
+                                                <span class="text-info"><b>CREDIT BALANCE</b></span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <span class="user-circle bg-success">DS</span>
+                                            <div class="d-flex flex-column">
+                                                <span style="font-size: 12px">Service Charges Paid By</span>
+                                                <span class="text-success"><b>DESERT STEPS</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="pay-info">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <span class="text-secondary"><b>PUBLIC SERVICE FEE</b></span>
+                                                <span class="text-secondary"><b>0.00 SAR</b></span>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <span class="text-secondary"><b>ACTUAL SERVICE FEE</b></span>
+                                                <span class="text-secondary"><b>0.00 SAR</b></span>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <span class="text-secondary"><b>CASH ON DELIVERY</b></span>
+                                                <span class="text-secondary"><b>0.00 SAR</b></span>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <span class="text-secondary"><b>DRIVER FEE</b></span>
+                                                <span class="text-secondary"><b>0.00 SAR</b></span>
+                                            </div>
+                                        </div>
+                                        <div class="total-pay">
+                                            <div class="d-flex flex-column">
+                                                <span class="text-secondary"><b>total :</b></span>
+                                                <span class="text-secondary"><b>120.2 SAR</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane comeRight" id="nav-customer" role="tabpanel" aria-labelledby="nav-customer-tab">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="orderNumCol">
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Name</span>
+                                        <span class="ml-4 mr-4 text-danger"><b>reefi store</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Login</span>
+                                        <span class="ml-4 mr-4 text-danger"><b>finance@reefi.me</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Email</span>
+                                        <span class="ml-4 mr-4 text-danger"><b>finance@reefi.me</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Phone</span>
+                                        <span class="ml-4 mr-4 text-danger"><b>0561392173</b></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="orderNumCol">
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Status</span>
+                                        <span class="ml-4 mr-4 text-success"><b>Active</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Activated Recipient</span>
+                                        <span class="ml-4 mr-4 text-success"><b>Enabled</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">SMS Notifications</span>
+                                        <span class="ml-4 mr-4 text-success"><b>Enabled</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Push Notifications</span>
+                                        <span class="ml-4 mr-4 text-success"><b>Enabled</b></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="orderNumCol">
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Company</span>
+                                        <span class="ml-4 mr-4 text-danger"><b>Reefi store</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Credit Balance</span>
+                                        <span class="ml-4 mr-4 text-danger"><b>Unlimited</b></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane comeRight" id="nav-courier" role="tabpanel" aria-labelledby="nav-courier-tab">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="orderNumCol">
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Code</span>
+                                        <span class="ml-4 mr-4 text-secondary"><b>N/A</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Name</span>
+                                        <span class="ml-4 mr-4 text-danger"><b>alaaltriq</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Email</span>
+                                        <span class="ml-4 mr-4 text-secondary"><b>N/A</b></span>
+                                    </div>
+
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Phone Number</span>
+                                        <span class="ml-4 mr-4 text-secondary"><b>N/A</b></span>
+                                    </div>
+
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Fax Number</span>
+                                        <span class="ml-4 mr-4 text-secondary"><b>N/A</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Website URL</span>
+                                        <span class="ml-4 mr-4 text-secondary"><b>N/A</b></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="orderNumCol">
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Number of Fleet</span>
+                                        <span class="ml-4 mr-4 text-secondary"><b>N/A</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Number of Drivers</span>
+                                        <span class="ml-4 mr-4 text-secondary"><b>N/A</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Contact Person</span>
+                                        <span class="ml-4 mr-4 text-danger"><b>test test</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Phone Number</span>
+                                        <span class="ml-4 mr-4 text-danger"><b>0543004375</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Email</span>
+                                        <span class="ml-4 mr-4 text-danger"><b>anasj@fv.dv</b></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="orderNumCol">
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Shipping Address</span>
+                                        <span class="ml-4 mr-4 text-secondary"><b>N/A</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Country</span>
+                                        <span class="ml-4 mr-4 text-secondary"><b>N/A</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">City</span>
+                                        <span class="ml-4 mr-4 text-secondary"><b>N/A</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Post Code</span>
+                                        <span class="ml-4 mr-4 text-secondary"><b>N/A</b></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div style="min-height: 100%" class="orderNumCol">
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Billing Address</span>
+                                        <span class="ml-4 mr-4 text-secondary"><b>N/A</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Country</span>
+                                        <span class="ml-4 mr-4 text-secondary"><b>N/A</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">City</span>
+                                        <span class="ml-4 mr-4 text-secondary"><b>N/A</b></span>
+                                    </div>
+                                    <div class="d-flex flex-column m-2">
+                                        <span class="text-secondary">Post Code</span>
+                                        <span class="ml-4 mr-4 text-secondary"><b>N/A</b></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane comeRight" id="nav-history" role="tabpanel" aria-labelledby="nav-history-tab">
+                        <div class="orderNumCol">
+                            <div class="history-list">
+                                <ul>
+                                    <li>
+                                        <span class="his-day">30/09/21 11:45</span>
+                                        <span>Status changed to Assigned to courier company by reefi store (alaaltriq)</span>
+                                    </li>
+                                    <li>
+                                        <span class="his-day">30/09/21 11:45</span>
+                                        <span>Status changed to Assigned to courier company by reefi store (alaaltriq)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane comeRight" id="nav-map" role="tabpanel" aria-labelledby="nav-map-tab">
+                        <div class="orderNumCol">
+                            <div>
+                                <div style="height: 400px" id="map1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane comeRight" id="nav-proofPayment" role="tabpanel" aria-labelledby="nav-proofPayment-tab">
+                        <form class="row">
+                            <div class="col-md-6 col-12">
+                                <div class="orderNumCol">
+                                    <p class="mb-0"><b>Paid by Sender</b></p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="img-block">
+                                            <div class="upload-img">
+                                                <div class="upload-icon">
+                                                    <i class="uploadCloud far fa-image"></i>
+                                                </div>
+                                                <input class="heddenUploud" type="file" multiple="" id="gallery-photo-add" name="images[]">
+                                            </div>
+                                            <div class="gallery topG">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column w-100">
+                                            <label class="position-relative w-100">
+                                                <input class="default-input" type="text" placeholder="">
+                                                <span class="custom-line"></span>
+                                                <span class="custom-label">Receipt Number</span>
+                                            </label>
+                                            <label class="position-relative w-100">
+                                                <input class="default-input" type="text" placeholder="">
+                                                <span class="custom-line"></span>
+                                                <span class="custom-label">Amount</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="orderNumCol">
+                                    <p class="mb-0"><b>Paid by Recipient</b></p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="img-block">
+                                            <div class="upload-img">
+                                                <div class="upload-icon">
+                                                    <i class="uploadCloud far fa-image"></i>
+                                                </div>
+                                                <input class="heddenUploud" type="file" multiple="" id="gallery-photo-add1" name="images[]">
+                                            </div>
+                                            <div class="gallery1 topG">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column w-100">
+                                            <label class="position-relative w-100">
+                                                <input class="default-input" type="text" placeholder="">
+                                                <span class="custom-line"></span>
+                                                <span class="custom-label">Receipt Number</span>
+                                            </label>
+                                            <label class="position-relative w-100">
+                                                <input class="default-input" type="text" placeholder="">
+                                                <span class="custom-line"></span>
+                                                <span class="custom-label">Amount</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end order number modal-->
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.nice-select.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/flatpickr.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
